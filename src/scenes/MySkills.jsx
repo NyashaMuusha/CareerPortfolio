@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(max-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" className="pt-10 pb-24 mb-12">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -33,15 +33,26 @@ const MySkills = () => {
             <div className="relative z-0 ml-30 before:absolute before:-top-10 before:-left-10  before:w-full  before:h-full before:border-2 before:border-blue before:z-[-1]">
               <img
                 className="z-10"
-                style={{backgroundPosition:'center center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}
+                style={{
+                  backgroundPosition: "center center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
                 src="assets/nip3.jpg"
                 alt="skills"
               />
             </div>
           ) : (
-            <img 
-            style={{backgroundPosition:'center center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}
-            className="z-10 w-[500px]  ml-30" src="assets/nip3.jpg" alt="skills" />
+            <img
+              style={{
+                backgroundPosition: "center center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+              }}
+              className="z-10 w-[500px]  ml-30"
+              src="assets/nip3.jpg"
+              alt="skills"
+            />
           )}
         </div>
       </div>
@@ -69,9 +80,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]"></div>
           </div>
           <p className="mt-5">
-            With close to a year of experience under my belt, I bring a wealth of knowledge
-             and expertise in TypeScript, Next.js, Firebase, Material UI, and Tailwind CSS 
-             to the table. 
+            With close to a year of experience under my belt, I bring a wealth
+            of knowledge and expertise in TypeScript, Next.js, Firebase,
+            Material UI, and Tailwind CSS to the table.
           </p>
         </motion.div>
 
@@ -84,7 +95,7 @@ const MySkills = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1,  y: 0 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
           <div className="relative h-32">
@@ -97,8 +108,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"></div>
           </div>
           <p className="mt-5">
-           Expertise in NextJS, Firebase and staying current with web development trends 
-           to build high-performance web apps.
+            Expertise in NextJS, Firebase and staying current with web
+            development trends to build high-performance web apps.
           </p>
         </motion.div>
 
@@ -124,8 +135,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]"></div>
           </div>
           <p className="mt-5">
-         Imaginative problem-solving skills, utilizing my proficiency in various technologies 
-         to deliver unique and creative solutions effortlessly.
+            Imaginative problem-solving skills, utilizing my proficiency in
+            various technologies to deliver unique and creative solutions
+            effortlessly.
           </p>
         </motion.div>
       </div>
