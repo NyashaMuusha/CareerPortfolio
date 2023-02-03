@@ -24,11 +24,12 @@ module.exports = {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
       },
+      
       content: {
-        brush: "url('/Users/nip/Desktop/react-portfolio/public/assets/brush.png')",
-        person1: "url('/Users/nip/Desktop/react-portfolio/public/assets/person-1.png')",
-        person2: "url('/Users/nip/Desktop/react-portfolio/public/assets/person-2.png')",
-        person3: "url('/Users/nip/Desktop/react-portfolio/public/assets/person-3.png')",
+        brush: "url('/public/assets/brush.png')",
+        person1: "url('/public/assets/person-1.png')",
+        person2: "url('/public/assets/person-2.png')",
+        person3: "url('/public/assets/person-3.png')",
       },
     },
     screens: {
