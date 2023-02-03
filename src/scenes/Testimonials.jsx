@@ -21,8 +21,8 @@ const Testimonials = () => {
         </p>
         <LineGradient width="mx-auto w-3/5" />
         <p className="mt-10 ">
-         Experience the impact of my work through 
-         the words of those who have seen it first hand
+          Experience the impact of my work through the words of those who have
+          seen it first hand
         </p>
       </motion.div>
 
@@ -42,7 +42,8 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+            A resilient software developer with a passion for continuous
+            learning
           </p>
         </motion.div>
 
@@ -60,8 +61,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+            Nyasha is a proactive, and creative developer
           </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+            Great team player, she is an asset to have in your corner
           </p>
         </motion.div>
       </div>
