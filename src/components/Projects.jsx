@@ -24,7 +24,7 @@ const Project = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">Everything is but a journey, so are my projects</p>
+        <p className="mt-7">Want to know what I am about? click me</p>
       </div>
       <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} />
     </motion.div>
@@ -76,17 +76,32 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+          <a href="https://evogym-ayshan.netlify.app">
+            <Project title="Project 1" />
+          </a>
+          <a href="https://nip-tin-dog.netlify.app">
+            <Project title="Project 2" />
+          </a>
 
           {/* ROW 2 */}
-          <Project className="h-[400px]" title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <a href="https://www.ayshan.co.za">
+            <Project className="h-[400px]" title="Project 3" />
+          </a>
+          <a href="https://drums-with-nip.netlify.app">
+            <Project title="Project 4" />
+          </a>
+          <a href="https://simon-game-with-nip.netlify.app">
+            <Project title="Project 5" />
+          </a>
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
+          <a href="https://keeper-with-nip.netlify.app">
+            <Project title="Project 6" />
+          </a>
+          <a href="https://nip-tin-dog.netlify.app">
+            <Project title="Project 7" />
+          </a>
+
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
