@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, text }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -24,9 +24,9 @@ const Project = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">Want to know what I am about? click me</p>
+        <p className="mt-7">{text}</p>
       </div>
-      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} />
+      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-1/2" />
     </motion.div>
   );
 };
@@ -72,39 +72,27 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
+             text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
           </div>
           <a href="https://evogym-ayshan.netlify.app">
-            <Project title="Project 1" />
+            <Project title="Project 1" text='A debt recovery system, debt management with the click of a button.' />
           </a>
           <a href="https://nip-tin-dog.netlify.app">
-            <Project title="Project 2" />
+            <Project title="Project 2" text='As a fitness fanatic, a building a fitness app was a no brainer.' />
           </a>
 
           {/* ROW 2 */}
           <a href="https://www.ayshan.co.za">
-            <Project className="h-[400px]" title="Project 3" />
+            <Project title="Project 3" text='A website I designed for a tech start up.' />
           </a>
-          <a href="https://drums-with-nip.netlify.app">
-            <Project title="Project 4" />
+          <a href="https://drums-with-nip.netlify.app" className="h-full">
+            <Project title="Project 4" text='This was my first web portfolio, I keep it as a reminder of how far I have come.' />
           </a>
-          <a href="https://simon-game-with-nip.netlify.app">
-            <Project title="Project 5" />
-          </a>
-
-          {/* ROW 3 */}
-          <a href="https://keeper-with-nip.netlify.app">
-            <Project title="Project 6" />
-          </a>
-          <a href="https://nip-tin-dog.netlify.app">
-            <Project title="Project 7" />
-          </a>
-
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
+               text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
           </div>
