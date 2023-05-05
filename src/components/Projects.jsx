@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, text }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -24,9 +24,13 @@ const Project = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">Want to know what I am about? click me</p>
+        <p className="mt-7">{text}</p>
       </div>
-      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} />
+      <img
+        src={`assets/${projectTitle}.jpg`}
+        alt={projectTitle}
+        className="h-[300px]"
+      />
     </motion.div>
   );
 };
@@ -72,39 +76,39 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
+             text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <a href="https://evogym-ayshan.netlify.app">
-            <Project title="Project 1" />
+          <a href="https://recoverly-9f5a0.web.app/signup">
+            <Project
+              title="Project 1"
+              text="Our debt recovery system simplifies debt management by allowing users to handle the process with just a few clicks. It streamlines the recovery process, making it easier and more efficient for businesses to manage their debts.."
+            />
           </a>
-          <a href="https://nip-tin-dog.netlify.app">
-            <Project title="Project 2" />
+          <a href="https://evogym-ayshan.netlify.app">
+            <Project
+              title="Project 2"
+              text="As someone who is passionate about fitness, creating a gym app was an obvious choice."
+            />
           </a>
 
           {/* ROW 2 */}
-          <a href="https://www.ayshan.co.za">
-            <Project className="h-[400px]" title="Project 3" />
+          <a href="https://dev-xpress.netlify.app">
+            <Project
+              title="Project 3"
+              text="I designed a website for a tech startup, showcasing innovative solutions and cutting-edge technology. The website features a modern and sleek design, with clear and concise information about the company"
+            />
           </a>
-          <a href="https://drums-with-nip.netlify.app">
-            <Project title="Project 4" />
+          <a href="https://the-cv-nip.netlify.app" className="h-full">
+            <Project
+              title="Project 4"
+              text="I keep my first web portfolio as a reminder of my growth as a front-end developer, even though it may not be as polished as my current work. It's a source of pride and motivation, representing the beginning of my journey towards becoming an accomplished developer."
+            />
           </a>
-          <a href="https://simon-game-with-nip.netlify.app">
-            <Project title="Project 5" />
-          </a>
-
-          {/* ROW 3 */}
-          <a href="https://keeper-with-nip.netlify.app">
-            <Project title="Project 6" />
-          </a>
-          <a href="https://nip-tin-dog.netlify.app">
-            <Project title="Project 7" />
-          </a>
-
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
+               text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
           </div>
