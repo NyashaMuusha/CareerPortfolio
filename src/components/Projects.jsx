@@ -94,7 +94,7 @@ const Projects = () => {
           </a>
 
           {/* ROW 2 */}
-          <a href="https://www.ayshan.co.za">
+          <a href="https://dev-xpress.netlify.app">
             <Project
               title="Project 3"
               text="I designed a website for a tech startup, showcasing innovative solutions and cutting-edge technology. The website features a modern and sleek design, with clear and concise information about the company"
