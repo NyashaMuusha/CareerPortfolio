@@ -52,48 +52,47 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-16 mb-7  text-sm text-center md:text-start ">
-            Unleash the power of biochemistry and coding with your new web developer 
-            - it's a match made in tech heaven!
+            I am Nyasha, a User-focused UX designer passionate about creating intuitive, accessible, and engaging digital experiences that enhance usability, efficiency, and overall user satisfaction.
           </p>
         </motion.div>
         {/* CALL TO ACTIONS */}
         <motion.div
-        className="flex mt-5 justify-center md:justify-start"
-        initial='hidden'
-        whileInView='visible'
-        viewport={{once:true, amount:0.5}}
-        transition={{delay:0.2, duration:0.5}}
-        variants={{
-          hidden: {opacity:0, x: -50},
-          visible: {opacity: 1, x: 0}
-        }}
-       >
-        <AnchorLink 
-        className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semi-bold hover:bg-blue hover:text-white transition duration-500"
-        onClick={() => setSelectedPage('contact')}
-        href='#contact'>
-          Contact Me
-        </AnchorLink>
-        <AnchorLink 
-        className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 '
-        onClick={() => setSelectedPage('contact')}
-        href='#contact'>
-         <div
-         className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10"> Lets Talk</div>
-        </AnchorLink>
-        </motion.div>
-        <motion.div 
-         className="flex mt-5 justify-center md:justify-start"
-         initial='hidden'
-         whileInView='visible'
-         viewport={{once:true, amount:0.5}}
-         transition={{delay:0.4, duration:0.5}}
-         variants={{
-           hidden: {opacity:0, x: -50},
-           visible: {opacity: 1, x: 0}
-         }}
+          className="flex mt-5 justify-center md:justify-start"
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 }
+          }}
         >
-        <SocialMediaIcons/>
+          <AnchorLink
+            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semi-bold hover:bg-blue hover:text-white transition duration-500"
+            onClick={() => setSelectedPage('contact')}
+            href='#contact'>
+            Contact Me
+          </AnchorLink>
+          <AnchorLink
+            className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 '
+            onClick={() => setSelectedPage('contact')}
+            href='#contact'>
+            <div
+              className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10"> Lets Talk</div>
+          </AnchorLink>
+        </motion.div>
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start"
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 }
+          }}
+        >
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>
