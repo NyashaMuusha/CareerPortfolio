@@ -1,7 +1,7 @@
 import {
   faTwitter,
   faLinkedin,
-  faGithub,
+  faBehance,
 } from "@fortawesome/fontawesome-free-brands";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,19 +11,11 @@ const SocialMediaIcons = () => {
     <div className="flex justify-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://github.com/NyashaMuusha"
+        href="https://www.behance.net/nyashamuusha"
         target="_blank"
         rel="noreferrer"
       >
-        <FontAwesomeIcon className="font-awesome " size="2x" icon={faGithub} />
-      </a>
-      <a
-        className="hover:opacity-50 transition duration-500"
-        href="https://www.linkedin.com/in/nyasha-ivy-peace-muusha-279457a3/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FontAwesomeIcon className="font-awesome" size="2x" icon={faLinkedin} />
+        <FontAwesomeIcon className="font-awesome " size="2x" icon={faBehance} />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -34,6 +26,15 @@ const SocialMediaIcons = () => {
         {" "}
         <FontAwesomeIcon className="font-awesome" size="2x" icon={faTwitter} />
       </a>
+      <a
+        className="hover:opacity-50 transition duration-500"
+        href="https://www.linkedin.com/in/nyasha-ivy-peace-muusha-279457a3/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FontAwesomeIcon className="font-awesome" size="2x" icon={faLinkedin} />
+      </a>
+
     </div>
   );
 };
