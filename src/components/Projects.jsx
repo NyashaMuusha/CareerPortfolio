@@ -80,30 +80,16 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <a href="https://recoverly-9f5a0.web.app/signup">
+          {/* <a href="https://recoverly-9f5a0.web.app/signup">
             <Project
               title="Project 1"
               text="Our debt recovery system simplifies debt management by allowing users to handle the process with just a few clicks. It streamlines the recovery process, making it easier and more efficient for businesses to manage their debts.."
             />
-          </a>
+          </a> */}
           <a href="https://evogym-ayshan.netlify.app">
             <Project
-              title="Project 2"
+              title="Project 1"
               text="As someone who is passionate about fitness, creating a gym app was an obvious choice."
-            />
-          </a>
-
-          {/* ROW 2 */}
-          <a href="https://dev-xpress.netlify.app">
-            <Project
-              title="Project 3"
-              text="I designed a website for a tech startup, showcasing innovative solutions and cutting-edge technology. The website features a modern and sleek design, with clear and concise information about the company"
-            />
-          </a>
-          <a href="https://the-cv-nip.netlify.app" className="h-full">
-            <Project
-              title="Project 4"
-              text="I keep my first web portfolio as a reminder of my growth as a front-end developer, even though it may not be as polished as my current work. It's a source of pride and motivation, representing the beginning of my journey towards becoming an accomplished developer."
             />
           </a>
           <div
