@@ -8,7 +8,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md: items-center gap-16 py-10"
+      className="min-h-screen md:min-h-[100.5vh] flex flex-col md:flex-row items-center justify-center gap-16 py-10"
     >
       {/* IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
@@ -51,13 +51,13 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-16 mb-7  text-sm text-center md:text-start ">
+          <p className=" mt-16 md:mt-20 mb-7 text-md md:text-lg text-justify md:text-start ">
             I am Nyasha, a User-focused UX designer passionate about creating intuitive, accessible, and engaging digital experiences that enhance usability, efficiency, and overall user satisfaction.
           </p>
         </motion.div>
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 md:mt-16 justify-center md:justify-start"
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
@@ -82,7 +82,7 @@ const Landing = ({ setSelectedPage }) => {
           </AnchorLink>
         </motion.div>
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5  md:mt-20 justify-center md:justify-start"
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
